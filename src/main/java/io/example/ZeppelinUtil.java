@@ -1,7 +1,6 @@
 package io.example;
 
 
-import kong.unirest.Unirest;
 import org.apache.zeppelin.client.ClientConfig;
 import org.apache.zeppelin.client.ZeppelinClient;
 import org.apache.zeppelin.interpreter.Interpreter;
