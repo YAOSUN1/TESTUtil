@@ -174,7 +174,8 @@ public class ZeppelinRestApi {
         //userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
         //userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");
         for(int j=0;j<userList.size();j++){
-            String createNote = "{\"name\":\""+userList.get(j)+"\",\"paragraphs\":[{\"title\":\"jdbcsourcexxx\",\"text\":\"To use a data source, add % before the jdbc name, such as %jdbcSource1 \n\r"+jdbcList.toString()+"\"}]}";
+            String createNote = "{\"name\":\""+userList.get(j)+"\",\"paragraphs\":[{\"title\":\"jdbcsourcexxx\",\"text\":\"To use data source,add % before the jdbc name,such as %jdbcSource1\n\r"+jdbcList.toString()+"\"}],\"defaultInterpreterGroup\":\"spark\",\"version\":\"0.10.0\",\"config\":{\"isZeppelinNotebookCronEnable\":false},\"info\":{}}";
+            System.out.println(createNote);
             String result = zeppelinRestApi.createNotebook(zeppelinRestApi,httpClient,createNote);
             System.out.println(result);
         }
