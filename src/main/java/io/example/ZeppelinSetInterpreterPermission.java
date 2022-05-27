@@ -34,7 +34,7 @@ public class ZeppelinSetInterpreterPermission {
         userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
         userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
         userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
-                userList.add("wutingting");userList.add("taoxiaoshan");
+                userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
         for(int i=0;i<jdbcList.size();i++){
             String result1 = zeppelinRestApi.getInterpreterSetting(zeppelinRestApi,httpClient,jdbcList.get(i));
             JSONObject jsonObjectBody = JSON.parseObject(result1).getJSONObject("body");
