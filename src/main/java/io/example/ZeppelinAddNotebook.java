@@ -130,6 +130,17 @@ public class ZeppelinAddNotebook {
         postMethod2.releaseConnection();
         return result;
     }
+    public String createParagraph(ZeppelinAddNotebook zeppelinRestApi,HttpClient httpClient,String noteId,String createNote) throws IOException{
+        PostMethod postMethod2 = zeppelinRestApi.sendPost("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId+"/paragraph");
+        postMethod2.addRequestHeader("Content-Type", "application/json");
+        postMethod2.addRequestHeader("Cookie",jSessionId);
+        RequestEntity stringRequestEntity = new StringRequestEntity(createNote,"application/json","utf-8");
+        postMethod2.setRequestEntity(stringRequestEntity);
+        httpClient.executeMethod(postMethod2);
+        String result = postMethod2.getResponseBodyAsString();
+        postMethod2.releaseConnection();
+        return result;
+    }
     public String getNotebookPermissions(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String noteId) throws IOException{
         GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId+"/permissions");
         getMethod2.addRequestHeader("Content-Type", "application/json");
@@ -198,6 +209,10 @@ public class ZeppelinAddNotebook {
             System.out.println(jsonObject3);
             String result3 = zeppelinRestApi.setNotebookPermissions(zeppelinRestApi,httpClient,noteId,jsonObject3.toJSONString());
             System.out.println(result3);
+            String createParagraph = "{\"title\":\"jdbcsourcexxx\",\"text\":\"To use data source,add % before the jdbc name,such as %jdbcSource1\n\r"+jdbcList.toString()+"\"}";
+            System.out.println(createParagraph);
+            String result5 = zeppelinRestApi.createParagraph(zeppelinRestApi,httpClient,noteId,createParagraph);
+            System.out.println(result5);
         }
         //System.out.println(jsonArray);
     }
