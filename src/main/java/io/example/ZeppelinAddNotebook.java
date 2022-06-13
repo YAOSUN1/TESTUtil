@@ -185,7 +185,7 @@ public class ZeppelinAddNotebook {
         //userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
         //userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
         //userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
-        userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxian");
+        userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");
         for(int j=0;j<userList.size();j++){
             String createNote = "{\"name\":\""+userList.get(j)+"\",\"paragraphs\":[{\"title\":\"jdbcsourcexxx\",\"text\":\"To use data source,add % before the jdbc name,such as %jdbcSource1\n\r"+jdbcList.toString()+"\"}],\"defaultInterpreterGroup\":\"spark\",\"version\":\"0.10.0\",\"config\":{\"isZeppelinNotebookCronEnable\":false},\"info\":{}}";
             System.out.println(createNote);
