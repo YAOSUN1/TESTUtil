@@ -178,7 +178,9 @@ public class ZeppelinAddNotebook {
         jdbcList.add("jdbcWIKI");jdbcList.add("jdbcsourcce122new");jdbcList.add("jdbcsource167");jdbcList.add("jdbcsource277");
         jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");
         List<String> userList = new ArrayList<String>();
+        //资管投研
         //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");
+        //山证科技
         //userList.add("admin");
         //userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
         //userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
