@@ -181,15 +181,16 @@ public class ZeppelinAddNotebook {
         jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");
         List<String> userList = new ArrayList<String>();
         //资管投研
-        //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");
+        //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");userList.add("zhongyanlin");userList.add("tuzhidong");userList.add("chenhao");
         //山证科技
-        userList.add("admin");
-        userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
-        userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
-        userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
-        userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
-        userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
+        //userList.add("admin");
+        //userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
+        //userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
+        //userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
+        //userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
+        //userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
         userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");userList.add("liangying");
+        userList.add("yangwei");userList.add("koudou");userList.add("wutingting");
         for(int j=0;j<userList.size();j++){
             String createNote = "{\"name\":\""+userList.get(j)+"\",\"paragraphs\":[{\"title\":\"jdbcsourcexxx\",\"text\":\"To use data source,add % before the jdbc name,such as %jdbcSource1\n\r"+jdbcList.toString()+"\"}],\"defaultInterpreterGroup\":\"spark\",\"version\":\"0.10.0\",\"config\":{\"isZeppelinNotebookCronEnable\":false},\"info\":{}}";
             System.out.println(createNote);
