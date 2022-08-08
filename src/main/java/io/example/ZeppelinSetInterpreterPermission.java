@@ -19,6 +19,8 @@ public class ZeppelinSetInterpreterPermission {
         JSONObject jsonObject = JSON.parseObject(result);
         JSONArray jsonArray = jsonObject.getJSONArray("body");
         List<String> jdbcList = new ArrayList<String>();
+        //迅兔
+        //jdbcList.add("jdbcSource30");
         //资管投研
         //jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource50");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource28")
         //;jdbcList.add("jdbcSource31");jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource94");jdbcList.add("jdbcSource33");
@@ -46,6 +48,9 @@ public class ZeppelinSetInterpreterPermission {
         userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");
         //固收
         //userList.add("yanlaiqiong");userList.add("guoguangkui");
+        //迅兔
+        //userList.add("zhanglifan");userList.add("liuzongchen");userList.add("kanghuayong");userList.add("chenleilei");userList.add("liyingcong");
+        //userList.add("xuyongming");userList.add("yuhan");userList.add("luwen");userList.add("zhangjingtian");
         for(int i=0;i<jdbcList.size();i++){
             String result1 = zeppelinRestApi.getInterpreterSetting(zeppelinRestApi,httpClient,jdbcList.get(i));
             JSONObject jsonObjectBody = JSON.parseObject(result1).getJSONObject("body");

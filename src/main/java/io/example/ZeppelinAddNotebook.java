@@ -168,6 +168,8 @@ public class ZeppelinAddNotebook {
         zeppelinRestApi.getZeppelinVersion(zeppelinRestApi,httpClient);
         zeppelinRestApi.loginZeppelin(zeppelinRestApi,httpClient);
         List<String> jdbcList = new ArrayList<String>();
+        //迅兔
+        jdbcList.add("jdbcSource30");
         //资管投研
         //jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource50");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource28");
         //山证科技
@@ -182,6 +184,9 @@ public class ZeppelinAddNotebook {
         //固收
         //jdbcList.add("jdbcSource30");
         List<String> userList = new ArrayList<String>();
+        //迅兔
+        userList.add("zhanglifan");userList.add("liuzongchen");userList.add("kanghuayong");userList.add("chenleilei");userList.add("liyingcong");
+        userList.add("xuyongming");userList.add("yuhan");userList.add("luwen");userList.add("zhangjingtian");
         //资管投研
         //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");userList.add("zhongyanlin");userList.add("tuzhidong");userList.add("chenhao");
         //山证科技
