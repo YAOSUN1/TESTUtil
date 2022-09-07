@@ -171,7 +171,7 @@ public class ZeppelinAddNotebook {
         //迅兔
         //jdbcList.add("jdbcSource30");
         //资管投研
-        //jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource50");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource28");
+        //jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource50");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource28");jdbcList.add("jdbcSource9");
         //山证科技
         jdbcList.add("jdbc133");jdbcList.add("jdbcDCAPP");jdbcList.add("jdbcOA");jdbcList.add("jdbcSource1");jdbcList.add("jdbcSource11");jdbcList.add("jdbcSource14");
         jdbcList.add("jdbcSource18");jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource236");jdbcList.add("jdbcSource247");
@@ -180,7 +180,7 @@ public class ZeppelinAddNotebook {
         jdbcList.add("jdbcSource70");jdbcList.add("jdbcSource77");jdbcList.add("jdbcSource8");jdbcList.add("jdbcSource80");jdbcList.add("jdbcSource87");jdbcList.add("jdbcSource9");
         jdbcList.add("jdbcSource91");jdbcList.add("jdbcSource92");jdbcList.add("jdbcSource94");jdbcList.add("jdbcSource95");jdbcList.add("jdbcSource99");
         jdbcList.add("jdbcWIKI");jdbcList.add("jdbcsourcce122new");jdbcList.add("jdbcsource167");jdbcList.add("jdbcsource277");
-        jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");
+        jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");jdbcList.add("jdbcSource168");
         //固收
         //jdbcList.add("jdbcSource30");
         List<String> userList = new ArrayList<String>();

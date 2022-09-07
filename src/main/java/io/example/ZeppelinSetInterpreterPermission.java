@@ -33,7 +33,7 @@ public class ZeppelinSetInterpreterPermission {
         jdbcList.add("jdbcSource91");jdbcList.add("jdbcSource92");jdbcList.add("jdbcSource94");jdbcList.add("jdbcSource95");jdbcList.add("jdbcSource99");
         jdbcList.add("jdbcWIKI");jdbcList.add("jdbcsourcce122new");jdbcList.add("jdbcsource167");jdbcList.add("jdbcsource277");
         jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");jdbcList.add("sh");
-        jdbcList.add("jdbcSource293");
+        jdbcList.add("jdbcSource293");jdbcList.add("jdbcSource168");
         //固收
         //jdbcList.add("jdbcSource30");
         List<String> userList = new ArrayList<String>();
