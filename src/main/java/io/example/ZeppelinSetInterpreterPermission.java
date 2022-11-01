@@ -46,9 +46,10 @@ public class ZeppelinSetInterpreterPermission {
         userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
         userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
         userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");
-        userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");userList.add("liuyang1");
+        userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");
+        userList.add("liuyang1");
         //固收
-        //userList.add("yanlaiqiong");userList.add("guoguangkui");
+        //userList.add("yanlaiqiong");userList.add("guoguangkui");userList.add("lirui");
         //迅兔
         //userList.add("zhanglifan");userList.add("liuzongchen");userList.add("kanghuayong");userList.add("chenleilei");userList.add("liyingcong");
         //userList.add("xuyongming");userList.add("yuhan");userList.add("luwen");userList.add("zhangjingtian");

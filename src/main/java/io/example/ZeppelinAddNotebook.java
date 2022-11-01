@@ -180,7 +180,7 @@ public class ZeppelinAddNotebook {
         jdbcList.add("jdbcSource70");jdbcList.add("jdbcSource77");jdbcList.add("jdbcSource8");jdbcList.add("jdbcSource80");jdbcList.add("jdbcSource87");jdbcList.add("jdbcSource9");
         jdbcList.add("jdbcSource91");jdbcList.add("jdbcSource92");jdbcList.add("jdbcSource94");jdbcList.add("jdbcSource95");jdbcList.add("jdbcSource99");
         jdbcList.add("jdbcWIKI");jdbcList.add("jdbcsourcce122new");jdbcList.add("jdbcsource167");jdbcList.add("jdbcsource277");
-        jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource100");jdbcList.add("jdbcSource168");
+        jdbcList.add("jdbcsource68");jdbcList.add("jdbcsource85");jdbcList.add("jdbcsource88");jdbcList.add("jdbcSource168");jdbcList.add("jdbcSource100");
         //固收
         //jdbcList.add("jdbcSource30");
         List<String> userList = new ArrayList<String>();
@@ -199,7 +199,7 @@ public class ZeppelinAddNotebook {
         userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");userList.add("liangying");
         userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");userList.add("liuyang1");
         //固收
-        //userList.add("yanlaiqiong");userList.add("guoguangkui");
+        //userList.add("yanlaiqiong");userList.add("guoguangkui");userList.add("lirui");
         for(int j=0;j<userList.size();j++){
             String createNote = "{\"name\":\""+userList.get(j)+"\",\"paragraphs\":[{\"title\":\"jdbcsourcexxx\",\"text\":\"To use data source,add % before the jdbc name,such as %jdbcSource1\n\r"+jdbcList.toString()+"\"}],\"defaultInterpreterGroup\":\"spark\",\"version\":\"0.10.0\",\"config\":{\"isZeppelinNotebookCronEnable\":false},\"info\":{}}";
             System.out.println(createNote);
