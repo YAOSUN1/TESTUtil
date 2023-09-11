@@ -45,16 +45,16 @@ public class ZeppelinSetInterpreterPermission {
         //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");userList.add("zhongyanlin");userList.add("tuzhidong");userList.add("chenhao");
         //userList.add("zengxiaozhen");userList.add("chenruiquan");
         //山证科技
-        userList.add("admin");userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
-        userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
-        userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
-        userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
-        userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
-        userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");
-        userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");
-        userList.add("liuyang1");userList.add("lisicong");
-        userList.add("liwei");userList.add("liangdeyu");userList.add("liumanlin");
-        userList.add("fengchong");userList.add("chenjiayi");
+        //userList.add("admin");userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
+        //userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
+        //userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
+        //userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
+        //userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
+        //userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");
+        //userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");
+        //userList.add("liuyang1");userList.add("lisicong");
+        //userList.add("liwei");userList.add("liangdeyu");userList.add("liumanlin");
+        userList.add("fengchong");userList.add("chenjiayi");userList.add("dingjie");
         //固收
         //userList.add("yanlaiqiong");userList.add("guoguangkui");userList.add("lirui");userList.add("sunzhehao");
         //迅兔
