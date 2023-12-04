@@ -10,7 +10,7 @@ import org.apache.zeppelin.interpreter.InterpreterGroup;
 public class ZeppelinUtil {
 
     public static void main(String[] args) throws Exception{
-        ClientConfig clientConfig = new ClientConfig("http://pharos.sxzqkjjr.com:10080/zeppelin/");
+        ClientConfig clientConfig = new ClientConfig("https://pharos.sxstech.cn:10080/zeppelin/");
         ZeppelinClient zClient = new ZeppelinClient(clientConfig);
 
         String zeppelinVersion = zClient.getVersion();

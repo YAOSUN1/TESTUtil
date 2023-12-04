@@ -48,7 +48,7 @@ public class ZeppelinAddNotebook {
         return getMethod;
     }
     public String getZeppelinVersion(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient) throws IOException {
-        GetMethod getMethod = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/version");
+        GetMethod getMethod = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/version");
         getMethod.addRequestHeader("Content-Type", "application/json");
         httpClient.executeMethod(getMethod);
         String result = getMethod.getResponseBodyAsString();
@@ -56,7 +56,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String loginZeppelin(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient) throws IOException{
-        PostMethod postMethod = zeppelinRestApi.sendPost("http://pharos.sxzqkjjr.com:10080/zeppelin/api/login");
+        PostMethod postMethod = zeppelinRestApi.sendPost("https://pharos.sxstech.cn:10080/zeppelin/api/login");
         postMethod.addRequestHeader("Content-Type","application/x-www-form-urlencoded");
         postMethod.getParams().setCookiePolicy(CookiePolicy.BROWSER_COMPATIBILITY);
         postMethod.setRequestBody("userName=admin&password=kjjr3306SXZQ");
@@ -71,7 +71,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String getAllInterpreterSettings(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient) throws IOException{
-        GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/interpreter/setting");
+        GetMethod getMethod2 = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/interpreter/setting");
         getMethod2.addRequestHeader("Content-Type", "application/json");
         getMethod2.addRequestHeader("Cookie",jSessionId);
         httpClient.executeMethod(getMethod2);
@@ -80,7 +80,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String getInterpreterSetting(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String interpreterID) throws IOException{
-        GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/interpreter/setting/"+interpreterID);
+        GetMethod getMethod2 = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/interpreter/setting/"+interpreterID);
         getMethod2.addRequestHeader("Content-Type", "application/json");
         getMethod2.addRequestHeader("Cookie",jSessionId);
         httpClient.executeMethod(getMethod2);
@@ -89,7 +89,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String setInterpreterSetting(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String interpreterID, String json) throws IOException{
-        PutMethod putMethod = zeppelinRestApi.sendPut("http://pharos.sxzqkjjr.com:10080/zeppelin/api/interpreter/setting/"+interpreterID);
+        PutMethod putMethod = zeppelinRestApi.sendPut("https://pharos.sxstech.cn:10080/zeppelin/api/interpreter/setting/"+interpreterID);
         putMethod.addRequestHeader("Content-Type", "text/plain");
         putMethod.addRequestHeader("Cookie",jSessionId);
         RequestEntity stringRequestEntity = new StringRequestEntity(json,"application/json","utf-8");
@@ -102,7 +102,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String getAllNotebooks(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient) throws IOException{
-        GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook");
+        GetMethod getMethod2 = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/notebook");
         getMethod2.addRequestHeader("Content-Type", "application/json");
         getMethod2.addRequestHeader("Cookie",jSessionId);
         httpClient.executeMethod(getMethod2);
@@ -111,7 +111,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String getNotebookInfo(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String noteId) throws IOException{
-        GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId);
+        GetMethod getMethod2 = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/notebook/"+noteId);
         getMethod2.addRequestHeader("Content-Type", "application/json");
         getMethod2.addRequestHeader("Cookie",jSessionId);
         httpClient.executeMethod(getMethod2);
@@ -120,7 +120,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String createNotebook(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String createNote) throws IOException{
-        PostMethod postMethod2 = zeppelinRestApi.sendPost("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook");
+        PostMethod postMethod2 = zeppelinRestApi.sendPost("https://pharos.sxstech.cn:10080/zeppelin/api/notebook");
         postMethod2.addRequestHeader("Content-Type", "application/json");
         postMethod2.addRequestHeader("Cookie",jSessionId);
         RequestEntity stringRequestEntity = new StringRequestEntity(createNote,"application/json","utf-8");
@@ -131,7 +131,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String createParagraph(ZeppelinAddNotebook zeppelinRestApi,HttpClient httpClient,String noteId,String createNote) throws IOException{
-        PostMethod postMethod2 = zeppelinRestApi.sendPost("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId+"/paragraph");
+        PostMethod postMethod2 = zeppelinRestApi.sendPost("https://pharos.sxstech.cn:10080/zeppelin/api/notebook/"+noteId+"/paragraph");
         postMethod2.addRequestHeader("Content-Type", "application/json");
         postMethod2.addRequestHeader("Cookie",jSessionId);
         RequestEntity stringRequestEntity = new StringRequestEntity(createNote,"application/json","utf-8");
@@ -142,7 +142,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String getNotebookPermissions(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String noteId) throws IOException{
-        GetMethod getMethod2 = zeppelinRestApi.sendGet("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId+"/permissions");
+        GetMethod getMethod2 = zeppelinRestApi.sendGet("https://pharos.sxstech.cn:10080/zeppelin/api/notebook/"+noteId+"/permissions");
         getMethod2.addRequestHeader("Content-Type", "application/json");
         getMethod2.addRequestHeader("Cookie",jSessionId);
         httpClient.executeMethod(getMethod2);
@@ -151,7 +151,7 @@ public class ZeppelinAddNotebook {
         return result;
     }
     public String setNotebookPermissions(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String noteId, String json) throws IOException{
-        PutMethod putMethod = zeppelinRestApi.sendPut("http://pharos.sxzqkjjr.com:10080/zeppelin/api/notebook/"+noteId+"/permissions");
+        PutMethod putMethod = zeppelinRestApi.sendPut("https://pharos.sxstech.cn:10080/zeppelin/api/notebook/"+noteId+"/permissions");
         putMethod.addRequestHeader("Content-Type", "application/json");
         System.out.println(noteId);
         putMethod.addRequestHeader("Cookie",jSessionId);
