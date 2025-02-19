@@ -26,6 +26,7 @@ public class ZeppelinSetInterpreterPermission {
         //;jdbcList.add("jdbcSource31");jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource94");jdbcList.add("jdbcSource33");jdbcList.add("jdbcSource293");jdbcList.add("jdbcSource236");
         //山证科技
         //jdbcList.add("jdbcSource313");
+        //jdbcList.add("jdbcSource166");
         //jdbcList.add("jdbc133");jdbcList.add("jdbcDCAPP");jdbcList.add("jdbcOA");jdbcList.add("jdbcSource1");jdbcList.add("jdbcSource11");jdbcList.add("jdbcSource14");
         //jdbcList.add("jdbcSource18");jdbcList.add("jdbcSource19");jdbcList.add("jdbcSource20");jdbcList.add("jdbcSource23");jdbcList.add("jdbcSource236");jdbcList.add("jdbcSource247");
         //jdbcList.add("jdbcSource251");jdbcList.add("jdbcSource251new");jdbcList.add("jdbcSource258");jdbcList.add("jdbcSource272");jdbcList.add("jdbcSource28");jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource31");
@@ -39,32 +40,64 @@ public class ZeppelinSetInterpreterPermission {
         //jdbcList.add("jdbcSource329");
         //jdbcList.add("jdbcSource307");
         //jdbcList.add("jdbcSource351");
+        //jdbcList.add("jdbcSource340");
+        //jdbcList.add("jdbcSource1");jdbcList.add("jdbcSource9");jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource31");jdbcList.add("jdbcSource33");jdbcList.add("jdbcSource94");
+        //jdbcList.add("jdbcSource258");jdbcList.add("jdbcSource261");jdbcList.add("jdbcSource313");jdbcList.add("jdbcSource351");jdbcList.add("jdbcSource356");
+        //jdbcList.add("jdbcSource355");
+        jdbcList.add("trinoSjt");
+
+
         //固收
-        //jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource33");jdbcList.add("jdbcSource9");jdbcList.add("jdbcSource9");jdbcList.add("jdbcsource85");jdbcList.add("jdbcSource94");
+        //jdbcList.add("jdbcSource30");jdbcList.add("jdbcSource9");jdbcList.add("jdbcSource9");jdbcList.add("jdbcsource85");jdbcList.add("jdbcSource94");
         //jdbcList.add("jdbcSource313");
-        jdbcList.add("jdbcSource30");
+        //jdbcList.add("jdbcSource30");
+        //jdbcList.add("jdbcSource351");
+        //jdbcList.add("jdbcSource33");
+        //jdbcList.add("jdbcSource355");
+        //jdbcList.add("jdbcSource27");
+        //jdbcList.add("jdbcSource340"); //孙哲豪
+        //资管
+        //jdbcList.add("jdbcSource30");
+        //审计厅
+        //jdbcList.add("jdbcSource301");
+        //jdbcList.add("jdbcSource5");
+        //jdbcList.add("trinoSjt");
         List<String> userList = new ArrayList<String>();
         //资管投研
         //userList.add("zhoubo");userList.add("baofei");userList.add("hejie");userList.add("liuziming");userList.add("zhongyanlin");userList.add("tuzhidong");userList.add("chenhao");
         //userList.add("zengxiaozhen");userList.add("chenruiquan");
         //山证科技
         //userList.add("admin");userList.add("liyuhan");userList.add("dingyanxia");userList.add("sunyao");userList.add("zhangzhenfan");userList.add("niuhuixia");
-        //userList.add("liumeifang");userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
+        userList.add("liumeifang");
+        //userList.add("wushuning");userList.add("hequanquan");userList.add("wangxiaolong");userList.add("xiaoyaowen");
         //userList.add("chenghua");userList.add("xinyangyang");userList.add("chenan");userList.add("sunliuyang");userList.add("lizhenglong");userList.add("shixinrui");
         //userList.add("wengran");userList.add("tanrui");userList.add("jiansijie");userList.add("wangqiukai");userList.add("heyingying");userList.add("chengleiyu");
         //userList.add("wutingting");userList.add("taoxiaoshan");userList.add("wangjiajia");
         //userList.add("xuyang");userList.add("chenmeiling");userList.add("chenxiang");
         //userList.add("liulu");userList.add("liangying");userList.add("yangwei");userList.add("koudou");userList.add("wutingting");userList.add("wanghengde");userList.add("mengmingfan");
         //userList.add("liuyang1");userList.add("lisicong");
-        //userList.add("liwei");userList.add("liangdeyu");userList.add("liumanlin");
+        //userList.add("liwei");
+        //userList.add("liangdeyu");userList.add("liumanlin");
         //userList.add("fengchong");userList.add("chenjiayi");userList.add("dingjie");
-        //userList.add("jichengheng");
+        //userList.add("jichengheng");userList.add("xuhaiyang");
+        //userList.add("penghaoliang");
+        //userList.add("zhangcongying");
         //固收
-        //userList.add("yanlaiqiong");userList.add("guoguangkui");userList.add("lirui");userList.add("sunzhehao");
-        userList.add("lixuchuan");
+        //userList.add("yanlaiqiong");userList.add("guoguangkui");
+        //userList.add("lirui");
+        //userList.add("sunzhehao");
+        //userList.add("lixuchuan");
+        //userList.add("chengbiao");
         //迅兔
         //userList.add("zhanglifan");userList.add("liuzongchen");userList.add("kanghuayong");userList.add("chenleilei");userList.add("liyingcong");
         //userList.add("xuyongming");userList.add("yuhan");userList.add("luwen");userList.add("zhangjingtian");
+        //资管
+        //userList.add("zhubin");
+        //审计厅
+        //userList.add("yanjingyao");userList.add("liwenfang");userList.add("zhangliyuan");
+
+
+
         for(int i=0;i<jdbcList.size();i++){
             String result1 = zeppelinRestApi.getInterpreterSetting(zeppelinRestApi,httpClient,jdbcList.get(i));
             JSONObject jsonObjectBody = JSON.parseObject(result1).getJSONObject("body");
