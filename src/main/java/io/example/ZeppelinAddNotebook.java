@@ -162,6 +162,19 @@ public class ZeppelinAddNotebook {
         putMethod.releaseConnection();
         return result;
     }
+
+    public String clearNotebookOutPut(ZeppelinAddNotebook zeppelinRestApi, HttpClient httpClient, String noteId) throws IOException{
+        PutMethod putMethod = zeppelinRestApi.sendPut("https://pharos.sxstech.cn:10080/zeppelin/api/notebook/"+noteId+"/clear");
+        putMethod.addRequestHeader("Content-Type", "application/json");
+        System.out.println(noteId);
+        putMethod.addRequestHeader("Cookie",jSessionId);
+        //RequestEntity stringRequestEntity = new StringRequestEntity(json,"application/json","utf-8");
+        //putMethod.setRequestEntity(stringRequestEntity);
+        httpClient.executeMethod(putMethod);
+        String result = putMethod.getResponseBodyAsString();
+        putMethod.releaseConnection();
+        return result;
+    }
     public static void main(String[] args) throws IOException {
         ZeppelinAddNotebook zeppelinRestApi = new ZeppelinAddNotebook();
         HttpClient httpClient = zeppelinRestApi.getHttpClient();
