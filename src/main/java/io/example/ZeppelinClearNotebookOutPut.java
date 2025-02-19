@@ -19,7 +19,8 @@ public class ZeppelinClearNotebookOutPut {
         for(int i=0;i<jsonArray.size();i++) {
             JSONObject jsonObject1 = (JSONObject) jsonArray.get(i);
             String noteId = jsonObject1.get("id").toString();
-            zeppelinRestApi.clearNotebookOutPut(zeppelinRestApi,httpClient,noteId);
+            String result1 = zeppelinRestApi.clearNotebookOutPut(zeppelinRestApi,httpClient,noteId);
+            System.out.println(result1);
         }
     }
 }
