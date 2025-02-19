@@ -7,7 +7,7 @@ import org.apache.commons.httpclient.HttpClient;
 
 public class ZeppelinClearNotebookOutPut {
     public static void main(String[] args) throws Exception {
-        ZeppelinAddNotebook zeppelinRestApi = new ZeppelinAddNotebook();
+        ZeppelinNotebookUtil zeppelinRestApi = new ZeppelinNotebookUtil();
         HttpClient httpClient = zeppelinRestApi.getHttpClient();
         zeppelinRestApi.getZeppelinVersion(zeppelinRestApi,httpClient);
         zeppelinRestApi.loginZeppelin(zeppelinRestApi,httpClient);

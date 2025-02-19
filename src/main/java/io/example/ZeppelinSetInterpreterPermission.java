@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ZeppelinSetInterpreterPermission {
     public static void main(String[] args) throws IOException {
-        ZeppelinAddNotebook zeppelinRestApi = new ZeppelinAddNotebook();
+        ZeppelinNotebookUtil zeppelinRestApi = new ZeppelinNotebookUtil();
         HttpClient httpClient = zeppelinRestApi.getHttpClient();
         zeppelinRestApi.getZeppelinVersion(zeppelinRestApi,httpClient);
         zeppelinRestApi.loginZeppelin(zeppelinRestApi,httpClient);
